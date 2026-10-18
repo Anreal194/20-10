@@ -557,11 +557,11 @@
         };
 
         const questions = [
-            { q: "1. Ngày 20/10 ở Việt Nam là kỷ niệm ngày gì?", options: ["A. Ngày Phụ nữ Việt Nam 🌸", "B. Ngày Nhà giáo Việt Nam", "C. Ngày Quốc tế Phụ nữ"], correctAnswer: 0 },
-            { q: "2. Loài hoa nào thường được tặng nhiều nhất vào ngày 20/10?", options: ["A. Hoa cúc trắng", "B. Hoa hồng và hoa hướng dương 🌹", "C. Hoa sen đá"], correctAnswer: 1 },
+            { q: "1. Ngày 20/10 ở Việt Nam là kỷ niệm ngày gì?", options: ["A. Ngày Phụ nữ Việt Nam 🌸", "B. Ngày Nhà giáo Việt Nam", "C. Ngày valentine"], correctAnswer: 0 },
+            { q: "2. Loài hoa nào thường được tặng nhiều nhất vào ngày 20/10?", options: ["A. Hoa cúc trắng🌼", "B. Hoa hồng và hoa hướng dương 🌹", "C. Hoa màu gà🐔"], correctAnswer: 1 },
             { q: "3. Món quà lớn nhất dành cho các bạn trong ngày 20/10 là gì?", options: ["A. Nụ cười và sự quan tâm chân thành 🥰", "B. Bị phạt chạy 5 vòng sân", "C. Làm bài kiểm tra 1 tiết"], correctAnswer: 0 },
             { q: "4. Phụ nữ Việt Nam được ví với phẩm chất cao đẹp nào?", options: ["A. Anh hùng, bất khuất, trung hậu, đảm đang 🌟", "B. Chăm chỉ ngủ nướng", "C. Thích ăn vặt cả ngày"], correctAnswer: 0 },
-            { q: "5. Bạn đã sẵn sàng nhận món quà bí mật ngày 20/10 chưa?", options: ["A. Sẵn sàng lắm rồi, mở quà thôi! 🎁", "B. Chưa muốn nhận lắm", "C. Thôi ngại lắm"], correctAnswer: 0 }
+            { q: "5. Bạn đã sẵn sàng nhận món quà bí mật ngày 20/10 chưa?", options: ["A. Sẵn sàng lắm rồi, mở quà thôi! 🎁", "B. Chưa muốn nhận lắm😒", "C. Thôi ngại lắm😓"], correctAnswer: 0 }
         ];
 
         let selectedNumber = null;
@@ -611,7 +611,7 @@
             if (choice === '20-10') {
                 commentElement.innerText = "Wao xuất sắc! 👏";
             } else {
-                commentElement.innerText = "Hôm nay là ngày 20-10 đấy nha! 😜";
+                commentElement.innerText = "Hôm nay 20-10 đó má 😒";
             }
             document.getElementById('personName').innerText = chosenStudentName;
             showStep('step3');
@@ -659,7 +659,7 @@
                 }, 800);
             } else {
                 feedbackElement.style.color = "#ff5252";
-                feedbackElement.innerText = "Chưa chính xác rồi, thử chọn đáp án khác xem nào! ❌";
+                feedbackElement.innerText = "gà vậy bà nội,có vậy cũng sai! ❌";
             }
         }
 
@@ -1099,12 +1099,12 @@ const CONFIG = {
   texts: {
     name2: 'NGUYỄN AN REAL',
     love: 'LOVE YOU',
-    lover: 'CƯỜI LÊN COI'
+    lover: 'HẸ HẸ HẸ'
   },
   // Thư 20/10 (sửa nội dung tuỳ ý, \n = xuống dòng)
   letter: {
     title: 'Chúc mừng 20/10 ♡',
-    text: 'Gửi bạn,\n\nHôm nay là 20/10, Chúc bạn luôn giữ nụ cười rạng rỡ, gặp nhiều may mắn và mọi điều tốt đẹp sẽ đến với bạn! ✨.\n\n🌸 Luôn tươi đẹp — Luôn hạnh phúc .🌹 Chúc bạn Đẹp hơn, vui hơn, hạnh phúc hơn mỗi ngày! .\n\n✨ Chúc mừng ngày 20/10! Mong mọi điều tốt đẹp đến với bạn!. LOVE YOU PẶC PẶC.\n\n— ANREAL'
+    text: 'Gửi bạn,\n\nHôm nay là 20/10, Chúc các con vợ thật hạnh phúc luôn nở nụ cười trên môi.\n\n🌸 Luôn tươi đẹp — Luôn hạnh phúc .🌹 Chúc bạn Đẹp hơn, vui hơn, hạnh phúc hơn mỗi ngày! .\n\n✨ Chúc mừng ngày 20/10! Mong mọi điều tốt đẹp đến với bạn!. LOVE YOU PẶC PẶC.\n\n— ANREAL'
   },
   // Thời gian chờ (giây) sau khi tên ghép xong thì cho phép chạm tiếp
   holdAfterName2: 5,
